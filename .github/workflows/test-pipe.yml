@@ -10,7 +10,7 @@ on:
     tags:
       - test/v[0-9]+\.[0-9]+\.[0-9]+-tst
       - test/v[0-9]+\.[0-9]+\.[0-9]+
-      
+
   pull_request:
     branches:
       - master
@@ -38,5 +38,6 @@ jobs:
           echo $REF
           echo $REF | rev | cut -d "/" -f 1 | rev
           echo  "${{ github.sha }}" | cut -c-7
+          echo ${{ github.base_ref }}
 
 
