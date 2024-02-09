@@ -36,5 +36,6 @@ jobs:
           export REF=${{ github.ref_name }}
           echo $REF
           echo $REF | rev | cut -d "/" -f 1 | rev
+          echo  "${{ github.sha }}" | cut -c-7
 
 
