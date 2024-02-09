@@ -8,7 +8,7 @@ on:
       - .github/workflows/test-pipe.yml
       # - "infra/tf/**"
     tags:
-      - test/v[0-9]+\.[0-9]+\.[0-9]+
+      - test/v[0-9]+\.[0-9]+\.[0-9]+-tst
 
   pull_request:
     branches:
